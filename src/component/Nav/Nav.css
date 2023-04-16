@@ -1,5 +1,10 @@
-nav {
+.header {
     height: 80px;
-    width: 1440px;
+    width: 100vh;
     background-color: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
 }
