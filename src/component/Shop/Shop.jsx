@@ -4,14 +4,16 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     useEffect( () => {
-        fetch('products.json')
+        fetch('https://raw.githubusercontent.com/ProgrammingHero1/ema-john-resources/main/fakeData/products.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setProducts(data))
     },[]);
+    console.log(products);
     return (
         <div className='shop'>
             <div className="product-container">
                 <h1>This is Product container</h1>
+                <h2>Products: {products.length}</h2>
 
             </div>
 
