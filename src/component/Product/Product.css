@@ -1,0 +1,13 @@
+/* style for product image  */
+.product img {
+    width: 286px;
+    height: 286px;
+    border-radius: 8px;
+}
+
+
+/* simple style color for product price  */
+.price {
+    color: brown;
+    
+}
