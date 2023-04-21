@@ -9,14 +9,20 @@ const Shop = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
     },[]);
-    console.log(products);
+    
+
+// for event handeler of clicl add to cart 
+const handleAddToCart = (product) => {
+    console.log(product);
+}
+
     return (
         <div className='shop'>
             <div className="product-container">
                 
 
                 {
-                    products.map(product => <Product key={product.id} product={product} /> )
+                    products.map(product => <Product key={product.id} product={product} handleAddToCart={handleAddToCart} /> )
                 }
 
             </div>
