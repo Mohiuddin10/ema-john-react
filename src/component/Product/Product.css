@@ -1,8 +1,9 @@
 /* style for product image  */
 .product img {
-    width: 100%;
+    width: 286px;
     height: 286px;
     border-radius: 8px;
+    margin: 7px;
     
 }
 
@@ -18,7 +19,8 @@
     height: 510px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
-    padding: 8px 7px;
+    position: relative;
+
 };
 
 
@@ -34,5 +36,30 @@
 
 .product-info {
     margin-left: 14px;
-    margin-top: 12px;
+    margin-top: 5px;
+}
+
+/* margin from price to seller  */
+.seller {
+    margin-top: 47px;
+    margin-bottom: 11px;
+}
+
+/* button css  */
+.add-cart {
+    width: 100%;
+    background: #FFE0B3;
+    border-radius: 0px 0px 8px 8px;
+    height: 48px;
+    position: absolute;
+    border: none;
+    bottom: 0;
+}
+.add-cart:hover {
+    background-color: orange;
+}
+
+/* margin between button & p tag  */
+.rating {
+    margin-bottom: 11px;
 }
