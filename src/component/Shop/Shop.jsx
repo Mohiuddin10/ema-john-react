@@ -9,11 +9,17 @@ const Shop = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
     },[]);
+
+    // order cart code 
+    const [cart, setCart] = useState([]);
+    cart = [];
     
 
 // for event handeler of clicl add to cart 
 const handleAddToCart = (product) => {
     console.log(product);
+    const newCart = [...cart, product ];
+    setCart(newCart);
 }
 
     return (
@@ -30,6 +36,7 @@ const handleAddToCart = (product) => {
 
             <div className="cart-container">
                 <h2>Order Summery</h2>
+                <p>Order: {cart.length}</p>
             </div>
             
         </div>
