@@ -12,7 +12,6 @@ const Shop = () => {
 
     // order cart code 
     const [cart, setCart] = useState([]);
-    cart = [];
     
 
 // for event handeler of clicl add to cart 
